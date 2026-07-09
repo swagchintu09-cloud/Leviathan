@@ -1,4 +1,4 @@
-const { EmbedBuilder, ActionRowBuilder, StringSelectMenuBuilder, ButtonBuilder, ButtonStyle, AttachmentBuilder } = require('discord.js');
+const { EmbedBuilder, ActionRowBuilder, StringSelectMenuBuilder, ButtonBuilder, ButtonStyle, AttachmentBuilder, ComponentType } = require('discord.js');
 const path = require('path');
 const fs = require('fs');
 
@@ -144,7 +144,7 @@ module.exports = {
         });
 
         const collector = msg.createMessageComponentCollector({ 
-            componentType: 3, 
+            componentType: ComponentType.StringSelect,
             time: 60000 
         });
 
