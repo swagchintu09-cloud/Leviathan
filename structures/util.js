@@ -314,6 +314,7 @@ module.exports = class Util {
 
     async selectMenuHandle(interaction) {
         try {
+            if (interaction.customId === 'helpop') return;
             await interaction.deferReply({ flags: 64 });
 
             const selected = interaction.values[0];
