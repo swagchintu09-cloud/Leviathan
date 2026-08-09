@@ -31,7 +31,7 @@ async function checkGroqAPI() {
         return false;
     }
 }
-
+// startup
 (async () => {
     try {
         console.log('Initializing Mongoose...');
